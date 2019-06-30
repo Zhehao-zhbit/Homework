@@ -5,7 +5,7 @@
 <head>
 <style>
 .background1 {
-	background-image: url(/static/imgs/pic008.jpg);
+	background-image: url(/static/imgs/pic002.jpg);
 	background-color: #000000;
 }
 </style>
@@ -19,7 +19,7 @@
 			width : '10px',
 			opacity : '0.2',
 			left : '1800px',
-			top : '100px'
+			top : '1000px'
 		}, 12000);
 		//$('#waiting')[0].play();
 		$("#moviebox").show('slow');
@@ -43,25 +43,19 @@
 </head>
 <body class="background1">
 	<audio id="intr" controls="controls"
-		src="/static/audio/introduction.mp3" autoplay="autoplay"></audio>
-	<audio id="poem" src="/static/audio/wanderingEarch-poem.mp3"
+		src="/static/audio/001.mp3" autoplay="autoplay"></audio>
+	<audio id="poem" src="/static/audio/001.mp3"
 		preload="auto"></audio>
-	<span id="firstline" style="font-size: 26px; color: white">大家好，我准备设计和实现一个“<span
-		style="font-size: 38px; color: red">流浪地球</span>”的漂亮网页！ 欢迎大家观赏,谢谢！
+	<span id="secondline" style="font-size: 26px; color: white;position:absolute;left:110px; top:110px">当太阳系已经不再适合人类居住的时候，苟且或者逃亡便成了一种抉择，而这种逃亡就叫做“<span
+		style="font-size: 38px; color: red">流浪地球</span>”只为了给为了给未来留下一个希望！
 	</span>
-	<audio id="waiting" src="/static/audio/waiting.mp3" preload="auto"></audio>
-	<div id="poem-txt"
-		style="display: none; font-size: 22px; color: orange; position:absolute; left :10px;top:50px" >
-		《诗词版"流浪地球"》<br /> <span style="font-size: 18px; color: grey">
-			-郭鹏 </span><br /> <br /> 西风吹皱东方河，万年地球白发多。 <br /> 流浪星际家何去，满船清梦出银河。
-	</div>
 	<img src="/static/imgs/earth.png"
 		style="position: absolute; left: 10px; bottom: 10px; width: 200px"
 		onclick="run(this);return false" />
 	<div id="moviebox" style="margin-top: 100px; display: none"
 		align="center">
 		<video id="movie" height="500px" controls="controls"
-			src="http://vd.yinyuetai.com/sh.yinyuetai.com/uploads/videos/common/74B70168929FF3BC930BAD3647882B83.mp4" onended="onVideoEnd();" />
+			src="/static/video/movie.mp4" onended="onVideoEnd();" />
 	</div>
 </body>
 </html>
